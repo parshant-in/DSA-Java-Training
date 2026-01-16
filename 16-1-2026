@@ -1,3 +1,4 @@
+//code 1
 class Student{
     //logic
     int rollNumber;
@@ -12,6 +13,42 @@ public class basic{
         obj.name = "Parshant";
         System.out.println(obj.rollNumber);
         System.out.println(obj.name);
+    }
+}
+
+//code 2
+class Students{
+    int rollNumber;
+    String name;
+
+    Students(int i,String n){
+        rollNumber =i;
+        name = n;
+
+    }
+}
+
+public class basic {
+    public static void main(String[] args) {
+        Students obj =new Students(10, "parshant");
+        System.out.println(obj.rollNumber);
+        System.out.println(obj.name);
+        
+    }
+}
+//code3
+class Student {
+    int rollNumber;
+    void setId(int rollNumber){
+        this.rollNumber = rollNumber;
+    }
+}
+public class basic {
+    public static void main(String[] args) {
+        Student obj = new Student();
+        obj.setId(1751);
+        System.out.println(obj.rollNumber);
+
     }
 }
 
