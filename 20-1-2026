@@ -1,3 +1,4 @@
+
 // encapsulation means wraping up the data(functions variable,object) into a single unit called class and restriction of the data accesing using access modifiers
 //public,private,protected
  #code1
@@ -22,5 +23,38 @@ class Main {
         BankAccount acc= new BankAccount();
         acc.setBalance(5000);
         System.out.println(acc.getBalance());
+    }
+}
+
+
+
+
+// Abstraction 
+// Abstraction means hiding the implementation and showing only 
+// the neccessary essentials features 
+// abstract class -- class cannot be initialized and it is formed using absract keyword
+// abstract method -- no body only the implementation is there
+#code 2
+abstract class Vehicle {
+    abstract void start();
+}
+
+class Car extends Vehicle {
+    void start() {
+        System.out.println("Car starts");
+    }
+}
+class Bike extends Vehicle {
+    void start() {
+        System.out.println("Bike starts");
+    }
+}
+
+class Main {
+    public static void main(String[] args) {
+        Vehicle v1 = new Car();
+        Vehicle v2 = new Bike();
+        v1.start();
+        v2.start();
     }
 }
