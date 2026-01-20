@@ -1,0 +1,26 @@
+// encapsulation means wraping up the data(functions variable,object) into a single unit called class and restriction of the data accesing using access modifiers
+//public,private,protected
+ #code1
+class BankAccount{
+    int bankBalance;
+    public void setBalance(int amount){
+        if(amount>=0){
+            bankBalance = amount;
+        }else{
+            System.out.println("Invalid amount");
+        }
+    }
+    //getters
+public int getBalance(){
+  return bankBalance;  
+}
+}
+
+
+class Main {
+    public static void main(String[] args) {
+        BankAccount acc= new BankAccount();
+        acc.setBalance(5000);
+        System.out.println(acc.getBalance());
+    }
+}
