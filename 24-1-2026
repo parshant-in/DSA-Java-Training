@@ -1,0 +1,30 @@
+//Interface in java is abstract type that defines aset of methods a classs must implements
+//Multipple inheritance 
+#code 1
+interface tv{
+    void watchingTv();
+}
+interface food{
+    void eatingFood();
+}
+
+
+class Student implements tv,food{
+    public void watchingTv(){
+         System.out.println("watching tv");
+    }
+    public void eatingFood(){
+         System.out.println("eatingFood");
+    
+}
+}
+
+class Main {
+    public static void main(String[] args) {
+        
+        Student s =new Student();
+        s.watchingTv();
+        s.eatingFood();
+        
+    }
+}
