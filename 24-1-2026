@@ -56,3 +56,23 @@ class Main {
          CollegeStudent std = new CollegeStudent("Parshant");
      }
 }
+
+#code 3
+//inheriting attributes
+
+class University{
+     String UniversityName = "IILM University";
+}
+
+class College extends University{
+    void displayUniversityName(){
+        System.out.println("University:"+UniversityName);
+    }
+}
+
+public class Main {
+      public static void main(String[] args){
+          College c = new College();
+          c.displayUniversityName();
+      }
+}
