@@ -76,3 +76,26 @@ public class Main {
           c.displayUniversityName();
       }
 }
+
+
+#code 4
+//inheriting methods
+
+class Parent {
+    void pocketMoney(){
+        System.out.println("Pocket Money credit");
+    }
+}
+class child extends Parent{
+    void freelancing(){
+        System.out.println("Own money");
+    }
+}
+
+public class Main {
+      public static void main(String[] args){
+          child ch = new child();
+          ch.pocketMoney();
+          ch.freelancing();
+      }
+}
