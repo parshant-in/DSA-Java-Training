@@ -1,0 +1,21 @@
+//Exception handling
+//try and catch finally 
+#code 1
+public class Main
+{
+	public static void main(String[] args) {
+	    
+	    try {
+	        
+	        int balance =5000;
+	    int withdraw=6000;
+	     int result = balance-withdraw;
+	        
+	    } catch(Exception e) {
+	        System.out.println("Error occured");
+	    }finally{
+	        System.out.println("transaction complete");
+	    }
+	   
+	}
+}
