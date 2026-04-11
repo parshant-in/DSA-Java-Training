@@ -1,0 +1,21 @@
+trees
+#Leetcode 144
+class Solution {
+   public void traversal(TreeNode root,List<Integer> ans) {
+        
+        if(root == null){
+            return;
+        }
+        ans.add(root.val);
+        traversal(root.left,ans);
+        traversal(root.right,ans);
+    }
+
+   public List<Integer> preorderTraversal(TreeNode root) {
+        ArrayList<Integer> ans = new ArrayList<>();
+        traversal(root, ans);
+        return ans;
+
+        
+    }
+}
